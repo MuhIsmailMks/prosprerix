@@ -18,10 +18,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+	
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- <meta property="og:image" content="assets/path/to/image.jpg"> --> 
+ 
     <!-- CSS -->
 	 <link rel="stylesheet" href="./assets/css/style.css">
     <!-- CSS End -->
@@ -29,101 +29,257 @@
 
   <body>
 
-    <div class="container-web w-full relative h-auto pl-[60px] lg:pl-[90px] flex min-[1900px]:justify-center min-[1900px]:pr-[100px] max-lg:flex-col">
+    <div class="container-web w-full relative h-auto pl-[70px] lg:pl-[90px] flex min-[1900px]:justify-center min-[1900px]:pr-[100px] max-lg:flex-col max-w-[100%] overflow-hidden">
 
 		<div class="bg w-full h-full left-0 top-0 fixed">
-			<img src="./assets/images/leopard.jpg" alt="leopard" class="w-full h-auto object-cover absolute top-0 left-0">
+			<img src="./assets/images/leopard.jpg" alt="leopard" class=" w-full h-auto max-md:h-full object-cover absolute top-0 left-0 zoomIn_animation" style="animation-duration: 20s;">
 
 			<span class="absolute w-full h-full left-0 top-0 bg-[#ff04c970] z-[1]  "></span>
 		</div>
 
-		<div class="navbar left-0 top-0 h-screen fixed w-[60px] lg:w-[80px] bg-white border-r-[2px] border-black flex flex-col items-center pt-[50px] gap-[25px] z-10">
-			<a href="#movie">
-				<img src="./assets/images/moviesIcon.svg" alt="movie" class="w-[40px] h-auto object-contain">
+		<div class="navbar left-0 top-0 h-screen fixed w-[60px] lg:w-[80px] bg-black border-r-[2px] border-black flex flex-col items-center pt-[50px] gap-[25px] z-20">
+			<a class="navbar_link" hoverAtt="Movie" href="#movie" data-aos="fade-right"
+			data-aos-duration="400"
+			data-aos-delay="100">
+				<img src="./assets/images/moviesIcon.svg" alt="movie" class="w-[40px] h-auto object-contain hoverRotation">
 			</a>
-			<a href="#tv">
-				<img src="./assets/images/tvIcon.svg" alt="tv" class="w-[40px] h-auto object-contain">
+			<a class="navbar_link" hoverAtt="TV" href="#tv" data-aos="fade-right"
+			data-aos-duration="400"
+			data-aos-delay="200">
+				<img src="./assets/images/tvIcon.svg" alt="tv" class="w-[40px] h-auto object-contain hoverRotation">
 			</a>
-			<a href="#media">
-				<img src="./assets/images/mediaIcon.svg" alt="media" class="w-[40px] h-auto object-contain">
+			<a class="navbar_link" hoverAtt="Media" href="#media"  data-aos="fade-right"
+			data-aos-duration="400"
+			data-aos-delay="300">
+				<img src="./assets/images/mediaIcon.svg" alt="media" class="w-[40px] h-auto object-contain hoverRotation">
 			</a>
-			<a href="#cars">
-				<img src="./assets/images/carsIcon.svg" alt="car" class="w-[40px] h-auto object-contain">
+			<a class="navbar_link" hoverAtt="Cars" href="#cars"  data-aos="fade-right"
+			data-aos-duration="400"
+			data-aos-delay="400">
+				<img src="./assets/images/carsIcon.svg" alt="car" class="w-[40px] h-auto object-contain hoverRotation">
 			</a>
-			<a href="#fashion">
-				<img src="./assets/images/fashionIcon.svg" alt="fashion" class="w-[40px] h-auto object-contain">
+			<a class="navbar_link" hoverAtt="Fashion" href="#fashion"  data-aos="fade-right"
+			data-aos-duration="400"
+			data-aos-delay="500">
+				<img src="./assets/images/fashionIcon.svg" alt="fashion" class="w-[40px] h-auto object-contain hoverRotation">
 			</a>
-			<a href="#politics">
-				<img src="./assets/images/PoliticsIcon.svg" alt="Politics" class="w-[40px] h-auto object-contain">
+			<a class="navbar_link" hoverAtt="Politics" href="#politics"  data-aos="fade-right"
+			data-aos-duration="400"
+			data-aos-delay="600">
+				<img src="./assets/images/PoliticsIcon.svg" alt="Politics" class="w-[40px] h-auto object-contain hoverRotation">
 			</a>
 		</div>
 
-		<div class="image-right lg:right-[15px] lg:top-[20px] h-auto relative lg:absolute w-full lg:w-[180px] min-[1500px]:w-[220px] bg-white border-r-[2px] border-black flex flex-wrap lg:flex-col items-center z-10">
+		<div class="image-right lg:right-[15px] lg:top-[20px] h-auto relative lg:absolute w-full lg:w-[180px] xl:w-[225px] min-[1500px]:w-[220px] bg-white border-r-[2px] border-black flex flex-wrap lg:flex-col items-center z-10">
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image1.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image1.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image2.png" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image2.png" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image3.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image3.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -4s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image4.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image4.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.5s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image5.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image5.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.2s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image6.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image6.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.5s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image7.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image7.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -4.3s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image8.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image8.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -4.1s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image9.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image9.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2.5s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image10.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image10.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -4.3s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image11.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image11.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.7s;">
 			</div>
 
-			<div class="image w-[45%] lg:w-full h-auto border-b-2 border-black">
-				<img src="./assets/images/image12.jpg" alt="image" class="w-full">
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image12.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -4.7s;">
+			</div>
+
+
+
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image14.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.7s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image15.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2.1s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image16.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.2s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image17.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -.7s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image18.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.4s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image19.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2.1s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image20.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2.3s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image21.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2.8s;">
+			</div>
+
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image22.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -.8s;">
+			</div>
+			
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image23.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.4s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image24.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -2s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black">
+				<img src="./assets/images/image25.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -4s;">
+			</div>
+
+
+
+
+
+
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image26.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.5s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/image12.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.2s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black  ">
+				<img src="./assets/images/image4.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.2s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black ">
+				<img src="./assets/images/devil.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.35s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/Hummers.webp" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.55s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/leopard.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -3.1s;">
+			</div>
+
+			<div class="image w-[45%] lg:w-full h-[120px] lg:h-auto border-b-2 border-black max-lg:hidden">
+				<img src="./assets/images/mysuper.jpg" alt="image" class="w-full opacity_animation h-full object-cover" style="animation-delay: -1.4s;">
 			</div>
 		 
 		</div>
 
-		<div class="container w-full xl:w-[83%] min-[1700px]:w-[85%] h-auto relative flex justify-center items-center py-[100px] z-10">
+		<div class="container w-full xl:w-[80%] min-[1700px]:w-[85%] h-auto relative flex justify-center items-center flex-col py-[100px] z-10 gap-4">
+
+			<!-- <div class="socials w-auto flex items-center bg-white p-6 lg:p-10 justify-center">
+				<div class="social flex items-center gap-10 flex-wrap"> 
+
+
+					<a href="https://web.telegram.org/a/" target="_blank">
+						<img src="./assets/images/telegram.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+					</a>
+
+					<a href="https://x.com/" target="_blank">
+						<img src="./assets/images/twitter.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+					</a>
+
+					
+					<a href="https://dexscreener.com/" target="_blank">
+						<img src="./assets/images/dexscreenblack.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+					</a>
+
+					
+					<a href="https://etherscan.io/" target="_blank">
+						<img src="./assets/images/etherscan_black.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+					</a>
+
+				</div>
+			</div> -->
 
 			<div class="container-page w-full h-auto bg-white border-2 border-black px-6 py-6 flex flex-col gap-[100px]">
+
+				<div class="socials w-auto flex items-center p-6 lg:p-10 justify-center mb-[-80px]">
+					<div class="social flex items-center gap-10 flex-wrap"> 
+	
+	
+						<a href="https://web.telegram.org/a/" target="_blank">
+							<img src="./assets/images/telegramLogo.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+						</a>
+	
+						<a href="https://x.com/" target="_blank">
+							<img src="./assets/images/twitterLogo.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+						</a>
+	
+						
+						<a href="https://dexscreener.com/" target="_blank">
+							<img src="./assets/images/dex-screener-seeklogo.png" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+						</a>
+	
+						
+						<a href="https://etherscan.io/" target="_blank">
+							<img src="./assets/images/etherscan-logo.svg" alt="social" class="w-auto h-[30px] lg:h-[70px] hoverRotation">
+						</a>
+	
+					</div>
+				</div>
 
 				<section class="home">
 					<div class="image w-full h-auto relative mb-[100px]">
 						<img src="./assets/images/hero.png" alt="" class="w-full h-auto">
 					</div>
-					<h2 class="text-[55px] mb-[50px]">McBling</h2>
-					<p class="text-[25px] text-[#333]">Pull on your quippy graphic tee and zip up your tracksuits—we’re wearing the 2024 version of McBling. If you’ve been searching “Y2K” on Depop, or scouring thrift stores looking for Von Dutch trucker hats, Juicy Couture tracksuits with “Juicy” splashed across the butt, or tight baby tees with the bedazzled, cursive “Baby Phat” logo, you’re actually searching for the McBling aesthetic.</p>
+					<h2 class="text-[35px] lg:text-[55px] mb-[50px] text-color-animation text-center">McBling</h2>
+					<p class="text-[16px] md:text-[20px] text-[#333]">Pull on your quippy graphic tee and zip up your tracksuits—we’re wearing the 2024 version of McBling. If you’ve been searching “Y2K” on Depop, or scouring thrift stores looking for Von Dutch trucker hats, Juicy Couture tracksuits with “Juicy” splashed across the butt, or tight baby tees with the bedazzled, cursive “Baby Phat” logo, you’re actually searching for the McBling aesthetic.</p>
 				</section>
 
 				<section class="about">
-					<h2 class="text-[55px] mb-[50px]">About</h2>
+					<h2 class="text-[35px] lg:text-[55px] mb-[50px] text-color-animation text-center" style="animation-delay: -1s;">About</h2>
 					
 					<div class="flex flex-col w-full relative gap-8 text-[30px]">
 
@@ -148,22 +304,35 @@
 				</section>
 
 				<section id="movie" class=" w-full h-auto relative flex flex-col gap-[40px]">
-					<h2 class="title-section">MOVIE</h2>
+					<h2 class="title-section text-color-animation">MOVIE</h2>
 
 					<div class="movie w-full flex justify-center items-center flex-col gap-4">
-						<img src="./assets/images/meangirl.jpg" alt="mean" class="w-full lg:w-[50%] h-auto object-contain duration-100 hover:scale-105 cursor-pointer">
+						<div class="image w-full lg:w-[50%] h-auto" data-aos="zoom-out"
+						data-aos-duration="800"
+						data-aos-delay="100">
+							<div class="imageInside w-full zoomIn_animation">
+								<img src="./assets/images/meangirl.jpg" alt="meangirl" class="w-full h-auto object-contain duration-100 hover:scale-105 cursor-pointer" >
+							</div>
+						</div>
 						<h3 class="mt-[30px] text-[25px] lg:text-[50px]">Mean Girl</h3>
 					</div>
 
 					<div class="movie w-full flex justify-center items-center flex-col gap-4">
-						<img src="./assets/images/devil.jpg" alt="devil" class="w-full lg:w-[50%] h-auto object-contain duration-100 hover:scale-105 cursor-pointer">
+						
+						<div class="image w-full lg:w-[50%] h-auto" data-aos="zoom-out"
+						data-aos-duration="800"
+						data-aos-delay="100">
+							<div class="imageInside w-full zoomIn_animation" style="animation-delay: -.5s;">
+								<img src="./assets/images/devil.jpg" alt="devil" class="w-full h-auto object-contain duration-100 hover:scale-105 cursor-pointer" >
+							</div>
+						</div>
 						<h3 class="mt-[30px] text-[25px] lg:text-[50px]">Devil wears prada</h3>
 					</div>
 
 				</section>
 
 				<section id="tv" class=" w-full h-auto relative flex flex-col gap-[40px]">
-					<h2 class="title-section">TV</h2>
+					<h2 class="title-section text-color-animation">TV</h2>
 
 				   <div class="tv-collection flex flex-wrap gap-6 text-[#4e4e4e]">
 
@@ -215,9 +384,9 @@
 				</section>
 				
 				<section id="media" class=" w-full h-auto relative flex flex-col gap-[40px]">
-					<h2 class="title-section">Socials Media</h2>
+					<h2 class="title-section text-color-animation">Socials Media</h2>
  
-					<div class="social flex items-center gap-10 flex-wrap">
+					<div class="social flex items-center gap-10 flex-wrap max-lg:justify-center">
 						<a href="#myspace">
 							<img src="./assets/images/myspace.webp" alt="social" class="w-auto h-[50px] lg:h-[100px] duration-100 hover:scale-105">
 						</a>
@@ -242,25 +411,25 @@
 				</section>
 
 				<section id="cars" class=" w-full h-auto relative flex flex-col gap-[40px]">
-					<h2 class="title-section">Cars</h2>
+					<h2 class="title-section text-color-animation" style="animation-delay: -2s;">Cars</h2>
  
 					<div class="cars-collection w-full flex flex-wrap justify-center gap-5">
 
-						<div class="car w-[380px] h-[350px] flex flex-col items-center border-[#5f5f5f] border-[3px]">
+						<div class="car w-[380px] h-[300px] md:h-[350px] max-w-full flex flex-col items-center border-[#5f5f5f] border-[3px]">
 							<div class="w-full relative h-[70%]">
 								<img src="./assets/images/Hummers.webp" alt="car" class="w-full h-full object-cover">
 							</div>
 							<h2 class="h-[20%] flex pt-[20px] items-center text-[35px]">Hummers</h2>
 						</div>
  
-						<div class="car w-[380px] h-[350px] flex flex-col items-center border-[#5f5f5f] border-[3px]">
+						<div class="car w-[380px] h-[300px] md:h-[350px] max-w-full flex flex-col items-center border-[#5f5f5f] border-[3px]">
 							<div class="w-full relative h-[70%]">
 								<img src="./assets/images/jeep.jpg" alt="car" class="w-full h-full object-cover">
 							</div>
 							<h2 class="h-[20%] flex pt-[20px] items-center text-[35px]">Jeep</h2>
 						</div>
 
-						<div class="car w-[380px] h-[350px] flex flex-col items-center border-[#5f5f5f] border-[3px]">
+						<div class="car w-[380px] h-[300px] md:h-[350px] max-w-full flex flex-col items-center border-[#5f5f5f] border-[3px]">
 							<div class="w-full relative h-[70%]">
 								<img src="./assets/images/rangerover.webp" alt="car" class="w-full h-full object-cover">
 							</div>
@@ -272,33 +441,33 @@
 				</section>
 
 				<section id="fashion" class=" w-full h-auto relative flex flex-col gap-[40px]">
-					<h2 class="title-section">Fashion</h2>
+					<h2 class="title-section text-color-animation">Fashion</h2>
  
 					 <div class="fashion-collection w-full flex flex-wrap justify-center gap-5">
 
 						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
-							<p class="text-[20px]">Von Dutch trucker hats</p>
+							<p class="text-[16px] md:text-[20px]">Von Dutch trucker hats</p>
 						</div>
 						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
-							<p class="text-[20px]"> Ed Hardy t-shirts</p>
+							<p class="text-[16px] md:text-[20px]"> Ed Hardy t-shirts</p>
 						</div>
 						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
-							<p class="text-[20px]">
+							<p class="text-[16px] md:text-[20px]">
 								Bebe bedazzled baby tees
 							</p>
 						</div>
 						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
-							<p class="text-[20px]">
+							<p class="text-[16px] md:text-[20px]">
 								Juicy Couture tracksuits
 							</p>
 						</div>
 						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
-							<p class="text-[20px]">
+							<p class="text-[16px] md:text-[20px]">
 								Victoria’s Secret PINK rhinestone-encrusted fold-over yoga pant
 							</p>
 						</div>
 						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
-							<p class="text-[20px]">
+							<p class="text-[16px] md:text-[20px]">
 								American flag-inspired clothing post-9/11
 							</p>
 						</div> 
@@ -308,22 +477,33 @@
 				</section>
 
 				<section id="politics" class=" w-full h-auto relative flex flex-col gap-[40px]">
-					<h2 class="title-section">Georges Bush</h2>
+					<h2 class="title-section text-color-animation">Georges Bush</h2>
 
-					<div class="image w-[50%]">
+					<div class="image w-full md:w-[50%]">
 						<img src="./assets/images/george.jpg" alt="george" class="w-full object-contain">
 					</div>
 
-					<p class="text-[20px]">George Walker Bush[a] (born July 6, 1946) is an American politician and businessman who served as the 43rd president of the United States from 2001 to 2009. A member of the Bush family and the Republican Party, he was the 46th governor of Texas from 1995 to 2000. The eldest son of the 41st president, George H. W. Bush, he flew warplanes in the Texas Air National Guard in his twenties. After graduating from Harvard Business School in 1975, he worked in the oil industry. He later co-owned the Texas Rangers, of Major League Baseball, before being elected governor of Texas in 1994. As governor, Bush successfully sponsored legislation for tort reform, increased education funding, set higher standards for schools, and reformed the criminal justice system. He also helped make Texas the leading producer of wind-generated electricity in the United States. In the 2000 presidential election, he won over Democratic incumbent Vice President Al Gore, while losing the popular vote after a narrow and contested Electoral College win, which involved a Supreme Court decision to stop a recount in Florida.	
+					<p class="text-[16px] md:text-[20px]">George Walker Bush[a] (born July 6, 1946) is an American politician and businessman who served as the 43rd president of the United States from 2001 to 2009. A member of the Bush family and the Republican Party, he was the 46th governor of Texas from 1995 to 2000. The eldest son of the 41st president, George H. W. Bush, he flew warplanes in the Texas Air National Guard in his twenties. After graduating from Harvard Business School in 1975, he worked in the oil industry. He later co-owned the Texas Rangers, of Major League Baseball, before being elected governor of Texas in 1994. As governor, Bush successfully sponsored legislation for tort reform, increased education funding, set higher standards for schools, and reformed the criminal justice system. He also helped make Texas the leading producer of wind-generated electricity in the United States. In the 2000 presidential election, he won over Democratic incumbent Vice President Al Gore, while losing the popular vote after a narrow and contested Electoral College win, which involved a Supreme Court decision to stop a recount in Florida.	
 					</p>
 
 				</section>
 
 			</div>
 
+			<footer class="w-full flex flex-col items-center text-white gap-10">
+				<p class="bg-[#ff00ea93] p-4">Reference</p>
+				<div class="link flex gap-4 justify-center w-full flex-wrap">
+					<a href="https://aesthetics.fandom.com/wiki/McBling" target="_blank" class="bg-[#ff00ea93] p-2 underline">https://aesthetics.fandom.com/wiki/McBling</a>
+					<a href="https://cari.institute/aesthetics/bubblegum-bling" target="_blank" class="bg-[#ff00ea93] p-2 underline">https://cari.institute/aesthetics/bubblegum-bling</a>
+					<a href="https://www.vogue.com/article/what-is-mcbling" target="_blank" class="bg-[#ff00ea93] p-2 underline">https://www.vogue.com/article/what-is-mcbling</a>
+					<a href="https://dagmaramach.com/mcbling/" target="_blank" class="bg-[#ff00ea93] p-2 underline">https://dagmaramach.com/mcbling/</a>
+				</div>
+				<span class="bg-[#ff00ea93] p-4">@2025 All Right</span>
+			</footer>
+
 		</div>
 
-		<div class="music fixed bottom-[50px] left-[10px] lg:left-auto lg:right-[50px] rounded-full w-[70px] h-[70px] bg-pink-400 border-black border-[3px] flex justify-center items-center z-10 cursor-pointer">
+		<div class="music fixed bottom-[50px] left-[10px] lg:left-auto lg:right-[50px] rounded-full w-[70px] h-[70px] bg-pink-400 border-black border-[3px] flex justify-center items-center z-50 cursor-pointer">
 			<div class="icon w-[80%] h-auto object-contain">
 				<img src="./assets/images/musicIcon.svg" alt="" class="w-full h-auto rotate-animation">
 			</div>
@@ -339,6 +519,9 @@
 
 	</div>
 
-	<script src="./assets/js/index.js"></script>
+    <!-- aos js scroll animation -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	
+	<script src="./assets/js/index.js"></script> 
   </body>
 </html>
