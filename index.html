@@ -20,8 +20,7 @@
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- <meta property="og:image" content="assets/path/to/image.jpg"> -->
-    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <!-- <meta property="og:image" content="assets/path/to/image.jpg"> --> 
     <!-- CSS -->
 	 <link rel="stylesheet" href="./assets/css/style.css">
     <!-- CSS End -->
@@ -115,6 +114,9 @@
 			<div class="container-page w-full h-auto bg-white border-2 border-black px-6 py-6 flex flex-col gap-[100px]">
 
 				<section class="home">
+					<div class="image w-full h-auto relative mb-[100px]">
+						<img src="./assets/images/hero.png" alt="" class="w-full h-auto">
+					</div>
 					<h2 class="text-[55px] mb-[50px]">McBling</h2>
 					<p class="text-[25px] text-[#333]">Pull on your quippy graphic tee and zip up your tracksuits—we’re wearing the 2024 version of McBling. If you’ve been searching “Y2K” on Depop, or scouring thrift stores looking for Von Dutch trucker hats, Juicy Couture tracksuits with “Juicy” splashed across the butt, or tight baby tees with the bedazzled, cursive “Baby Phat” logo, you’re actually searching for the McBling aesthetic.</p>
 				</section>
@@ -214,12 +216,15 @@
 				<section id="media" class=" w-full h-auto relative flex flex-col gap-[40px]">
 					<h2 class="title-section">Socials Media</h2>
  
-					<div class="social flex items-center gap-10">
+					<div class="social flex items-center gap-10 flex-wrap">
 						<a href="#myspace">
-							<img src="./assets/images/myspace.webp" alt="social" class="w-auto h-[100px] duration-100 hover:scale-105">
+							<img src="./assets/images/myspace.webp" alt="social" class="w-auto h-[50px] lg:h-[100px] duration-100 hover:scale-105">
 						</a>
 						<a href="#blinge">
-							<img src="./assets/images/blinge.svg" alt="social" class="w-auto h-[100px] duration-100 hover:scale-105">
+							<img src="./assets/images/blinge.svg" alt="social" class="w-auto h-[50px] lg:h-[100px] duration-100 hover:scale-105">
+						</a>
+						<a href="https://dexscreener.com/" target="_blank">
+							<img src="./assets/images/dexscreenblack.svg" alt="social" class="w-auto h-[50px] lg:h-[100px] duration-100 hover:scale-105">
 						</a>
 					</div>
 
@@ -260,28 +265,28 @@
  
 					 <div class="fashion-collection w-full flex flex-wrap justify-center gap-5">
 
-						<div class="h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
+						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
 							<p class="text-[20px]">Von Dutch trucker hats</p>
 						</div>
-						<div class="h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
+						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
 							<p class="text-[20px]"> Ed Hardy t-shirts</p>
 						</div>
-						<div class="h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
+						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
 							<p class="text-[20px]">
 								Bebe bedazzled baby tees
 							</p>
 						</div>
-						<div class="h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
+						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
 							<p class="text-[20px]">
 								Juicy Couture tracksuits
 							</p>
 						</div>
-						<div class="h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
+						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
 							<p class="text-[20px]">
 								Victoria’s Secret PINK rhinestone-encrusted fold-over yoga pant
 							</p>
 						</div>
-						<div class="h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
+						<div class="h-auto max-lg:py-5 lg:h-[50px] flex justify-center items-center px-4 border-2 border-gray-800">
 							<p class="text-[20px]">
 								American flag-inspired clothing post-9/11
 							</p>
@@ -307,7 +312,7 @@
 
 		</div>
 
-		<div class="music fixed bottom-[50px] right-[50px] rounded-full w-[70px] h-[70px] bg-pink-400 border-black border-[3px] flex justify-center items-center z-10 cursor-pointer">
+		<div class="music fixed bottom-[50px] left-[10px] lg:left-auto lg:right-[50px] rounded-full w-[70px] h-[70px] bg-pink-400 border-black border-[3px] flex justify-center items-center z-10 cursor-pointer">
 			<div class="icon w-[80%] h-auto object-contain">
 				<img src="./assets/images/musicIcon.svg" alt="" class="w-full h-auto rotate-animation">
 			</div>
