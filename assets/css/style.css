@@ -22,6 +22,7 @@ body{
 
 .navbar_link img {
   filter: invert(1);
+  -webkit-filter: invert(1);
 }
 
 
@@ -42,7 +43,7 @@ body{
   opacity: 1;
 }
 
-
+ 
 .container-page{
   background-image: url("../images/bg.gif");
   background-size: 100% auto;  /* Lebar penuh, tinggi mengikuti */
