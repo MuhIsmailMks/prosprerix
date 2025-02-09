@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Candice";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Candice.ttf") format("truetype");
+  font-display: swap;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Candice", serif;
+}
+
+.title-section{
+  font-size: 60px; 
+}
+
+.blink-animation{
+  animation: blink .3s linear infinite;
+  -webkit-animation: blink .3s linear infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .4;
+  }
+}
+
+.rotate-animation{
+  animation: rotate 7s linear infinite;
+  -webkit-animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
