@@ -69,6 +69,16 @@ body{
   display: block;
 }
 
+.image_box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
 @media screen and (max-width:1024px) {
   .title-section{
     font-size: 45px; 
