@@ -61,11 +61,24 @@ body{
 }
 
 
+.music span{
+  display: none;
+}
+
+.music.active span{
+  display: block;
+}
+
 @media screen and (max-width:1024px) {
   .title-section{
     font-size: 45px; 
-  }
-  
+  } 
+}
+
+@media screen and (max-width:1424px) {
+  .title-section{
+    font-size: 30px; 
+  } 
 }
  
 
@@ -100,8 +113,8 @@ body{
     opacity: .4;
   }
 }
-
-.rotate-animation{
+ 
+.music .rotate-animation{
   animation: rotate 7s linear infinite;
   -webkit-animation: rotate 7s linear infinite;
 }
