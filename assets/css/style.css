@@ -98,3 +98,51 @@ body {
   -o-transform: rotate(360deg);
 } 
 }
+
+.music span{
+  display: none;
+}
+
+.music.active span{
+  display: block;
+}
+
+ 
+.music .rotate-animation{
+  animation: rotate 7s linear infinite;
+  -webkit-animation: rotate 7s linear infinite;
+}
+
+
+.float_animation{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+0% {
+  transform: translatey(0px);
+}
+50% { 
+  transform: translatey(-10px);
+}
+100% {
+  transform: translatey(0px);
+}
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}

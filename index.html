@@ -44,9 +44,9 @@
                 /> 
               </div>
      
-              <!-- <div class="absolute left-[50%] translate-x-[-50%] w-[50%] h-full  flex justify-center items-center gap-3 lg:gap-6">
+              <div class="absolute left-[50%] translate-x-[-50%] w-[50%] h-full  flex justify-center items-center gap-3 lg:gap-6">
 
-                <a target="_blank" href="https://telegram.org/" class="w-[35px] lg:w-[60px] h-auto duration-100 hover:scale-110">
+                <a target="_blank" href="https://t.me/hulezhi" class="w-[35px] lg:w-[60px] h-auto duration-100 hover:scale-110">
                     <img src="./assets/images/telegram.svg" alt="" class="w-full h-auto">
                 </a>
 
@@ -54,7 +54,7 @@
                     <img src="./assets/images/twitter.svg" alt="" class="w-full h-auto">
                 </a>
 
-              </div> -->
+              </div>
      
     
               <div class="relative" data-aos="fade-left"
@@ -69,7 +69,7 @@
 
         <section class="hero relative z-20 flex items-center flex-col gap-7 pb-[50px] lg:pb-[100px]"> 
             
-             <div class=" relative w-[80%] lg:w-[40%] h-auto object-contain flex_center min-h-[250px]" 
+             <div class="relative w-[80%] lg:w-[40%] h-auto object-contain flex_center min-h-[250px]" 
              data-aos="fade-up"
              data-aos-duration="800"
              data-aos-delay="300">
@@ -204,7 +204,7 @@
 
        </section>
 
-        <section class="socials w-full h-auto relative z-20 flex_center flex-col gap-2 mt-[100px] pb-[40px] ">
+        <section class="socials w-full h-auto relative z-20 flex_center flex-col gap-2 mt-[100px]  ">
             
           <h2 class="text-[#D10202] text-[60px] lg:text-[80px] relative z-10" data-aos="fade-up"
           data-aos-duration="800"
@@ -214,7 +214,9 @@
             data-aos-duration="800"
           data-aos-delay="300">Join the HULEZHI ARMY</p>
 
-          <div class="socials flex_center flex-wrap gap-4 md:gap-10 mt-[10px] z-10">
+          <div class="socials flex_center flex-wrap gap-4 md:gap-10 mt-[10px] z-10" data-aos="fade-up"
+          data-aos-duration="800"
+        data-aos-delay="400">
 
               <a href="https://x.com/lmkfun/status/1891441617808118242" target="_blank" class="relative ">
                 <img src="./assets/images/twitter.svg" alt="twitter" class="w-[35px] md:w-[46px] lg:w-[40px] h-auto object-contain">
@@ -234,13 +236,25 @@
 
           </div>
 
-          <div class="bg h-full absolute left-0 bottom-0 w-full flex_center ">
+          <div class="bg h-full relative left-0 bottom-0 w-full flex_center lg:h-[300px] mt-[30px]">
             <img src="./assets/images/6168235162555499902.jpg" alt="bg footer" class="h-full w-full object-cover ">
             <span class="w-full absolute left-0 h-full bg-black opacity-[.5]"></span>
           </div>
 
  
         </section>
+
+        <div class="music fixed bottom-[130px] xl:bottom-[20px] left-[5px] lg:left-auto lg:right-[10px] rounded-full w-[47px] lg:w-[70px] h-[47px] lg:h-[70px] bg-[#f81212] border-black border-[3px] flex justify-center items-center z-50 cursor-pointer overflow-hidden">
+          <div class="icon w-[80%] h-auto object-contain">
+            <img src="./assets/images/musicIcon.svg" alt="" class="w-full h-auto rotate-animation">
+          </div>
+          <span class="bg-black w-[5px] h-full absolute rotate-45"></span>
+        </div>
+    
+        <audio id="backgroundMusic" loop autoplay>
+          <source src="./assets/Megan McDuffee - Don't Go In There  Scary Dark Ambient Music.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
 
     </div>
 
@@ -249,11 +263,29 @@
     <script>
 
      //  scroll animation Effect
-    window.addEventListener('DOMContentLoaded', () => {
-      AOS.init({
+     document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
         once: true
+      });
+
+
+    const musicButton = document.querySelector(".music");
+    const musicIcon = document.querySelector(".music .rotate-animation");
+    const audio = document.getElementById("backgroundMusic");
+    audio.play();
+    musicButton.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play();  
+            musicIcon.classList.add('rotate-animation')
+            musicButton.classList.remove('active')
+        } else {
+            audio.pause(); 
+            musicIcon.classList.remove('rotate-animation')
+            musicButton.classList.add('active')
+        }
     });
-    })
+  });
+
   
     // copy address
     const copybtn = document.querySelector(".copy_address");
