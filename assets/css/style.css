@@ -71,6 +71,17 @@ body {
 }
 
 
+.cex_link a{
+  background-color: black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.438);
+}
+
 @media screen and (max-width: 768px) {
     .buttonStyling {
         width: 45%;
@@ -78,6 +89,10 @@ body {
         font-size: 0.9rem;
         text-align: center;
         padding: 0.8rem 0;
+      }
+
+      .cex_link a{
+        padding: 1rem;
       }
 }
 
