@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">  
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png"> 
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
-      <!-- AOS scroll effect cdn --> 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- AOS scroll effect cdn --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
@@ -20,7 +22,6 @@
 
 <body>
 
-    
     <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#383838]  ">
 
         <nav class="relative top-0 w-full z-20 start-0 ">
@@ -45,7 +46,7 @@
                     <img src="./assets/images/telegram.svg" alt="" class="w-full h-auto">
                 </a>
 
-                <a target="_blank" href="https://x.com/home" class="w-[35px] lg:w-[60px] h-auto duration-100 hover:scale-110">
+                <a target="_blank" href="https://x.com/lmkfun/status/1891441617808118242" class="w-[35px] lg:w-[60px] h-auto duration-100 hover:scale-110">
                     <img src="./assets/images/twitter.svg" alt="" class="w-full h-auto">
                 </a>
 
@@ -101,8 +102,8 @@
              data-aos-delay="700" 
              >
               <a href="https://bscscan.com/" target="_blank" class="buttonStyling rotate-[18deg]">BSCSCAN</a>
-              <a href="https://x.com" target="_blank" class="buttonStyling rotate-[-8deg]">TWITTER</a>
-              <a href="https://t.me" target="_blank" class="buttonStyling rotate-[-20deg]">JOIN COMMUNITY</a> 
+              <a href="https://x.com/lmkfun/status/1891441617808118242" target="_blank" class="buttonStyling rotate-[-8deg]">TWITTER</a>
+              <a href="https://t.me/hulezhi" target="_blank" class="buttonStyling rotate-[-20deg]">JOIN COMMUNITY</a> 
              </div>
       
         </section>
@@ -124,7 +125,7 @@
             </div>
        
             <div class="image w-[90%] lg:w-[45%]">
-                <img src="./assets/images/LOGO.png" alt="bnc" class="w-full" data-aos="fade-up"
+                <img src="./assets/images/logo.png" alt="bnc" class="w-full" data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay="100"> 
             </div>
@@ -134,7 +135,7 @@
             data-aos-delay="400">
               <div class="contract w-full lg:w-auto flex_center bg-white rounded-full text-[14px] lg:text-[2vw] border-black border-[.15vw] px-5 py-[1vw] mediumBoxShadow copy-box lg:px-10"  >
                 <p>CA:</p>
-                <span data-set="000000000000000000000" class="copy-box__text max-w-[80%] overflow-hidden text-ellipsis">000000000000000000000</span>
+                <span data-set="0xc24d52e3d3a36e9481af0715180e530cbe4667ca" class="copy-box__text max-w-[80%] overflow-hidden text-ellipsis">0xc24d52e3d3a36e9481af0715180e530cbe4667ca</span>
                 <img src="./assets/images/copyIcon.svg" alt="copyIcon" class="w-[25px] md:w-[40px] h-auto object-contain ml-[2vw]  cursor-pointer copy_address">
               </div>
             </div> 
@@ -211,11 +212,11 @@
 
           <div class="socials flex_center flex-wrap gap-4 md:gap-10 mt-[10px] z-10">
 
-              <a href="https://x.com/home" target="_blank" class="relative ">
+              <a href="https://x.com/lmkfun/status/1891441617808118242" target="_blank" class="relative ">
                 <img src="./assets/images/twitter.svg" alt="twitter" class="w-[35px] md:w-[46px] lg:w-[40px] h-auto object-contain">
               </a>
 
-              <a href="https://t.me" target="_blank" class="relative ">
+              <a href="https://t.me/hulezhi" target="_blank" class="relative ">
                 <img src="./assets/images/telegram.svg" alt="telegram" class="w-[35px] md:w-[46px] lg:w-[40px] h-auto object-contain">
               </a>
 
@@ -244,9 +245,11 @@
     <script>
 
      //  scroll animation Effect
-    AOS.init({
+    window.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
         once: true
     });
+    })
   
     // copy address
     const copybtn = document.querySelector(".copy_address");
@@ -262,7 +265,7 @@
             }
 
             intervalId = setInterval(() => {
-                textSpan.innerHTML = '000000000000000000000'; 
+                textSpan.innerHTML = '0xc24d52e3d3a36e9481af0715180e530cbe4667ca'; 
                 clearInterval(intervalId);  
             }, 2000);
 
