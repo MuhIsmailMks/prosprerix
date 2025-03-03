@@ -1,118 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "Candice";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Candice.ttf") format("truetype");
+  font-display: swap;
 }
 
-body {
-  font-family: "Jolly Lodger", serif;
+html{
+  scroll-behavior: smooth;
 }
 
-.flex_center {
+body{
+  font-family: "Candice", serif;
+}
+
+.navbar_link {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.flex_between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fcfac2;
+.navbar_link img {
+  filter: invert(1);
+  -webkit-filter: invert(1);
 }
 
-.buttonStyling {
-  background-color: #df1212;
-  color: white;
-  box-shadow: 0 4px 2px black;
-  border: 1px solid black;
-  transition: 0.2s ease-in;
-  -webkit-transition: 0.2s ease-in;
-  -moz-transition: 0.2s ease-in;
-  -ms-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  font-size: 2vw;
-  padding: 0.5vw 1vw;
 
-  min-width: 250px;
-  text-align: center;
+.navbar_link::after {
+  content: attr(hoverAtt);  
+  position: absolute;
+  left: 70px;  
+  opacity: 0;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.buttonStyling:hover {
-  color: #970505;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+.navbar_link:hover::after {
+  opacity: 1;
 }
 
  
-.socials a{
-  background-color: black;
-  padding: 10px;
+.container-page{
+  background-image: url("../images/bg.gif");
+  background-size: 100% auto;  /* Lebar penuh, tinggi mengikuti */
+  background-repeat: repeat-y; /* Hanya mengulang ke bawah */
+  background-position: top center;
 }
 
-.socials img{
-  transition: .2s ease-in;
-  -webkit-transition: .2s ease-in;
-  -moz-transition: .2s ease-in;
-  -ms-transition: .2s ease-in;
-  -o-transition: .2s ease-in;
+.movie .image:hover .imageInside{
+  animation-play-state: paused; 
 }
 
-.socials a:hover img{
-  transform: rotate(300deg);
-  -webkit-transform: rotate(300deg);
-  -moz-transform: rotate(300deg);
-  -ms-transform: rotate(300deg);
-  -o-transform: rotate(300deg);
+.title-section{
+  font-size: 60px; 
+  text-align: center;
 }
 
-
-.cex_link a{
-  background-color: black;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  padding: 2rem;
-  border: 2px solid rgba(255, 255, 255, 0.438);
-}
-
-@media screen and (max-width: 768px) {
-    .buttonStyling {
-        width: 45%;
-        min-width: 100px;
-        font-size: 0.9rem;
-        text-align: center;
-        padding: 0.8rem 0;
-      }
-
-      .cex_link a{
-        padding: 1rem;
-      }
-}
-
-
-.rotate_animation{
-  animation: rotate 10s linear infinite;
-}
-
-@keyframes rotate {
-0%{
-  transform: rotate(0deg);
-}
-100% {
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-} 
-}
 
 .music span{
   display: none;
@@ -122,27 +69,64 @@ body {
   display: block;
 }
 
+.image_box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+@media screen and (max-width:1024px) {
+  .title-section{
+    font-size: 45px; 
+  } 
+}
+
+@media screen and (max-width:1424px) {
+  .title-section{
+    font-size: 30px; 
+  } 
+}
+ 
+
+/* animation */
+.hoverRotation{
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.hoverRotation:hover{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+
+.blink-animation{
+  animation: blink .3s linear infinite;
+  -webkit-animation: blink .3s linear infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .4;
+  }
+}
  
 .music .rotate-animation{
   animation: rotate 7s linear infinite;
   -webkit-animation: rotate 7s linear infinite;
-}
-
-
-.float_animation{
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-0% {
-  transform: translatey(0px);
-}
-50% { 
-  transform: translatey(-10px);
-}
-100% {
-  transform: translatey(0px);
-}
 }
 
 @keyframes rotate {
@@ -160,4 +144,63 @@ body {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
+}
+
+.text-color-animation {
+  animation: colorChange .5s infinite alternate;
+  -webkit-animation: colorChange .5s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% { color: #000000; }
+  20% { color: #ff00ff; }
+  40% { color: #2600ff; }
+  60% { color: #00ccff; }
+  70% { color: #000000; }
+  100% { color: #ff00ff; }
+}
+
+
+.zoomIn_animation {
+  animation: zoomIn_animation 1s ease-in-out infinite;
+  -webkit-animation: zoomIn_animation 1s ease-in-out infinite;
+}
+
+@keyframes zoomIn_animation {
+  0%,
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+}
+
+.image-right .image{
+  background-color: white;
+}
+
+.opacity_animation {
+  animation: opacity_animation 4s ease-in-out infinite;
+  -webkit-animation: opacity_animation 4s ease-in-out infinite;
+}
+
+@keyframes opacity_animation{
+  0%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .5;
+  }
 }
