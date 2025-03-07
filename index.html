@@ -76,11 +76,11 @@
 				<img src="./assets/images/SimpleIconsWwe.svg" alt="SimpleIconsWwe" class="w-[27px] min-[400px]:w-[30px] xl:w-[25px] min-[1500px]:w-[35px] h-auto object-contain hoverRotation">
 			</a>
 
-			<a class="navbar_link" hoverAtt="Cocaine" href="#cocaine"  data-aos="fade-right"
+			<!-- <a class="navbar_link" hoverAtt="Cocaine" href="#cocaine"  data-aos="fade-right"
 			data-aos-duration="400"
 			data-aos-delay="600">
 				<img src="./assets/images/cocaine.svg" alt="Cocaine" class="w-[27px] min-[400px]:w-[30px] xl:w-[25px] min-[1500px]:w-[35px] h-auto object-contain hoverRotation">
-			</a>
+			</a> -->
 
 			<a class="navbar_link" hoverAtt="carterls" href="#carterls"  data-aos="fade-right"
 			data-aos-duration="400"
@@ -361,6 +361,18 @@
 			</div>
 
 			<div class="container-page w-full h-auto bg-white border-2 border-black px-6 py-6 flex flex-col gap-[100px]">
+				<section>
+					<video
+					autoPlay
+					loop
+					muted
+					playsInline
+					className="w-full h-full object-cover relative opacity-75"
+				  >
+					<source src="./assets/images/video.MP4" type="video/mp4" />
+					Your browser does not support the video tag.
+				  </video>
+				</section>
 
 				<section class="home">
 					<div class="image w-full h-auto relative mb-[100px]">
@@ -398,6 +410,15 @@
 							</div>
 
 						</div>
+
+						<div class="border-4 border-[#474747] w-[100%] h-[80px] flex justify-center items-center gap-4">
+							<p>CA :</p>
+							<p data-set="000000000000000000000" class="contract font-mono max-w-[60%] text-ellipsis overflow-hidden box__text">000000000000000000000</p> 
+							<button class="relative copy_address"> 
+								<img src="./assets/images/copyIcon.svg" alt="copy" class="w-[35px] h-auto">
+							</button>
+						</div>
+
 
 					</div>
 
@@ -658,7 +679,7 @@
 
 				</section>
 
-				<section id="cocaine" class=" w-full h-auto relative flex flex-col gap-[40px]">
+				<section id="cocaine" class=" w-full h-auto relative flex-col gap-[40px] hidden">
 					<h2 class="title-section text-color-animation">CANNABIS | Cocaine</h2>
 
 					<div class="images w-full  flex justify-center">

@@ -42,6 +42,31 @@ document.addEventListener("DOMContentLoaded", function () {
       
         window.addEventListener("scroll", checkPosition);
         checkPosition();
-      });
+    });
+
+    
+  // copy address
+  const copybtn = document.querySelector(".copy_address");
+  let textSpan = document.querySelector('.box__text');
+
+  copybtn.addEventListener("click", function() { 
+     let intervalId;
+     
+         let addressText = document.querySelector(".contract").getAttribute('data-set');
+
+         textSpan.innerHTML = 'COPIED';
+
+         if (intervalId) {  
+             clearInterval(intervalId);
+         }
+
+         intervalId = setInterval(() => {
+             textSpan.innerHTML = '000000000000000000000'; 
+             clearInterval(intervalId);  
+         }, 2000);
+
+         navigator.clipboard.writeText(addressText);
+     }); 
+
       
 });
