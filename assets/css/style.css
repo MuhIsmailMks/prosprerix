@@ -374,11 +374,16 @@ nav{
     border: 2px solid #D5DDDD;
 }
 
+.testimoni.primary-bg-testimoni{
+    background-color: var(--primary-clr);
+}
+
 .testimoni .profile img{
     width: 75px;
     height: auto;
     aspect-ratio: 1/1;
 }
+
 
 .testimoni.white-bg-testimoni .name{
     color: #1E1E1E;
@@ -407,6 +412,11 @@ nav{
     height: auto;
 }
 
+
+.testimoni.primary-bg-testimoni .icon img{
+    filter: brightness(0) invert(1);  
+}
+
 /* media queries */
 @media screen and (min-width:600px)  {
     .service-category{
@@ -414,7 +424,7 @@ nav{
     }
 
     .testimoni-container .testimoni{
-        width: 350px;
+        width: 320px;
     }
 }
 
