@@ -28,13 +28,15 @@ input,
 button{
     border: none ;
     outline: none;
+    background-color: transparent;
 }
 
 
 section{
     position: relative;
     width: 100%;
-    max-width: 2000px; 
+    max-width: 1419px; 
+    padding: 0 1rem;
 }
 
 .container-site{
@@ -115,6 +117,10 @@ section{
 
 .font_title{
     font-size: 30px;
+}
+
+.font_provide{
+    font-size: 25px;
 }
 
 .font_medium{
@@ -281,10 +287,7 @@ nav{
     -o-transform: rotate(-45deg);
 }
 
-
-/* hero */
-
-
+ 
 /* brands slider */
 .brands-slider{
     width: 100%;
@@ -357,8 +360,6 @@ nav{
     height: 39px;
 }
 
-
-
 /* testimonials */
 .testimoni-container .testimoni{
     width: 100%;
@@ -396,7 +397,7 @@ nav{
 }
 
 .testimoni.primary-bg-testimoni .name,
-.testimoni.primary-bg-testimoni .message{
+.testimoni.primary-bg-testimoni .massage{
     color: #FFFFFF;
 } 
 .testimoni.primary-bg-testimoni .profession{
@@ -408,13 +409,52 @@ nav{
 }
 
 .testimoni .icon img{
-    width: 55px;
+    width: 35px;
     height: auto;
 }
 
 
 .testimoni.primary-bg-testimoni .icon img{
     filter: brightness(0) invert(1);  
+}
+
+
+/* provides */
+.provides .font_title{
+    width: 100%;
+}
+
+.provide-container{
+    width: 100%; 
+}
+
+.provide-container img{
+    width: 72px; 
+}
+
+/* contact */
+.contact-container{
+    height: 598px;
+    border-radius: 55px 4px 55px 4px;
+    -webkit-border-radius: 55px 4px 55px 4px;
+    -moz-border-radius: 55px 4px 55px 4px;
+    -ms-border-radius: 55px 4px 55px 4px;
+    -o-border-radius: 55px 4px 55px 4px;
+}
+
+.contact-container .content,
+.contact-container .image{
+    width: 100%;
+}
+
+.contact-container form input{
+    width: 75%;
+}
+
+
+/* footer */
+footer{
+   color: #E7E7E7;
 }
 
 /* media queries */
@@ -426,6 +466,17 @@ nav{
     .testimoni-container .testimoni{
         width: 320px;
     }
+
+    /* provide */
+    .provide-container{
+        width: 48%; 
+    }
+
+    /* contact */
+    .contact-container .image{
+        width: 70%;
+        max-width: 500px;
+    }
 }
 
 @media screen and (min-width:1000px)  {
@@ -434,7 +485,7 @@ nav{
     }
     
     .font_title{
-        font-size: 39px;
+        font-size: 42px;
     }
     
     .font_medium{
@@ -485,6 +536,42 @@ nav{
         height: 353px; 
     }
 
+    .testimoni .icon img{
+        width: 55px; 
+    }
+
+    /* provides */
+    .provides .font_title{
+        width: 60%;
+    }
+
+    .provide-container{
+        width: 33.33%; 
+    }
+
+    .provide-container img{
+        width: 102px; 
+    }
+
+    /* contact */
+    .contact-container{
+        height: 498px;
+        padding: 3rem 0;
+    }
+
+    .contact-container .content,
+    .contact-container .image{
+        width: 50%;
+        height: 100%;
+        max-width: 100%;
+    }
+ 
+    .contact-container form input{
+        width: 373px;
+    }
+
+    
+
 }
 
 
@@ -495,6 +582,10 @@ nav{
     
     .font_title{
         font-size: 48px;
+    }
+    
+    .font_provide{
+        font-size: 28px;
     }
     
     .font_medium{
@@ -518,4 +609,10 @@ nav{
         width: 431px;
         height: 403px; 
     }
+
+    /* provides */
+    .provides .font_title{
+        width: 896px;
+    }
+
 }
