@@ -237,6 +237,10 @@ nav{
     -o-transform: translateY(0%);
 }
 
+.btns-nav{
+    width: 100%;
+}
+
 /* menu button */
 .menu-btn button{
     height: 33px;
@@ -493,6 +497,12 @@ footer{
 
 /* media queries */
 @media screen and (min-width:600px)  {
+    /* navbar */
+    .btns-nav{
+        width: 25%;
+    }
+
+    /* service */
     .service-category{
         width: 48%; 
     }
@@ -511,6 +521,7 @@ footer{
         width: 70%;
         max-width: 500px;
     }
+    
 }
 
 @media screen and (min-width:1000px)  {
