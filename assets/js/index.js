@@ -13,4 +13,12 @@ $items.each(function (i) {
   const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
   $(this).css('animation-delay', `${delay}s`);
 });
+ 
 
+$items.on('mouseenter', function () {
+  $items.css('animation-play-state', 'paused');
+});
+
+$items.on('mouseleave', function () {
+  $items.css('animation-play-state', 'running');
+});

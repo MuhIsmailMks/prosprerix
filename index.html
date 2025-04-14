@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <!-- icon site -->
     <link rel="icon" href="./assets/faviconIcon.png" type="image/png">
 
@@ -23,7 +29,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
     <title>Prosperix</title>
 
 </head>
@@ -31,13 +36,15 @@
     
     <div class="container-site">
 
-        <nav class="navbar-site container-xxl flex_between px-lg-5 px-xxl-1 position-relative ">
+        <nav data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-duration="1000" class="navbar-site container-xxl flex_between px-lg-5 px-xxl-1 position-relative ">
             
             <div class="logo w-25 h-100 flex_items_center position-relative">
                 <img src="./assets/images/logo.svg" alt="" style="height: 30px;">
             </div>
             
-             <div class="menu-container flex_between    flex-column flex-lg-row gap-4">
+             <div class="menu-container flex_between  flex-column flex-lg-row gap-4">
                 <ul class="flex_center gap-5 w-50  flex-column  flex-lg-row">
                     <li><a href="#" class="text-dark font_normal font_semibold">Home</a></li>
                     <li><a href="#" class="text-dark font_normal font_semibold">Service</a></li>
@@ -47,11 +54,11 @@
 
                 <div class="btns flex_center gap-4">
                     
-                    <button class="rounded-3 flex_center text_primary py-3 px-3 bg-light font_normal" type="button">
+                    <button class="button-hover rounded-3 flex_center text_primary py-3 px-3 bg-light font_normal" type="button">
                         Sign in
                     </button>
 
-                    <button class="rounded-3 flex_center bg_primary py-3 px-3 text-light font_normal" type="button">
+                    <button class="button-hover rounded-3 flex_center bg_primary py-3 px-3 text-light font_normal" type="button">
                         Get Started
                     </button>
                 </div>
@@ -72,7 +79,9 @@
 
         <section class="hero flex_center flex-column-reverse flex-lg-row px-lg-5 px-xxl-1">
             
-            <div class="content w-100 w-md-75 w-lg-50 flex_col gap-5 lh-lg">
+            <div data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000" class="content w-100 w-md-75 w-lg-50 flex_col gap-5 lh-lg">
                 
                 <h1 class="font_large">Navigating the <span class="text_primary ">Global</span> financial landscape</h1>
 
@@ -81,7 +90,7 @@
                 <form action="" class="w-100 flex_center position-relative">
                     <input type="text" class="w-100 px-4 py-3 border-none font_normal font_semibold" placeholder="🖂 Your email address ">
 
-                    <button class="rounded-3 flex_center bg_primary py-3 px-3 text-light font_normal position-absolute end-0">
+                    <button class="button-hover rounded-3 flex_center bg_primary py-3 px-3 text-light font_normal position-absolute end-0">
                         Get Started
                     </button>
 
@@ -89,7 +98,9 @@
 
             </div>
 
-            <div class="image w-100 flex_items_center justify-content-center justify-content-lg-end">
+            <div data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000" class="image w-100 flex_items_center justify-content-center justify-content-lg-end">
                 <img src="./assets/images/Mainimage.webp" alt="main image" class="w-75 w-lg-100">
             </div>
 
@@ -138,9 +149,11 @@
             </div>
         </div>
 
-        <section class="Experince flex_center flex-column-reverse flex-lg-row px-lg-5 px-xxl-1 gap-4">
+        <section  class="Experince flex_center flex-column-reverse flex-lg-row px-lg-5 px-xxl-1 gap-4">
 
-            <div class="content w-100 w-md-75 w-lg-50 flex_col align-items-center align-items-lg-start gap-3 gap-lg-5 lh-lg">
+            <div data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000" class="content w-100 w-md-75 w-lg-50 flex_col align-items-center align-items-lg-start gap-3 gap-lg-5 lh-lg">
                 
                <div class="flex_col gap-1 align-items-start">
                    
@@ -156,13 +169,15 @@
 
                 <p class="font_medium lh-base">We're Committed to Providing You with Expert Guidance, Proven Strategies & Personalized Approach to Ensure Financial Prosperity</p>
 
-                <button class="rounded-3 flex_center bg-light py-3 px-3 text-dark font_normal border-button ">
+                <button class="button-hover rounded-3 flex_center bg-light py-3 px-3 text-dark font_normal border-button ">
                     Explore Services
                 </button>
 
             </div>
 
-            <div class="image w-100 flex_items_center justify-content-center  " style="background-color: #E0F8F8;">
+            <div  data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000" class="image w-100 flex_items_center justify-content-center  " style="background-color: #E0F8F8;">
                 <img src="./assets/images/expertise.svg" alt="main image" class="w-100">
             </div>
 
@@ -170,7 +185,9 @@
 
         <section class="Service flex_center flex-column-reverse flex-lg-row-reverse px-lg-5 px-xxl-1 gap-4">
 
-            <div class="content w-100 w-md-75 w-lg-50 flex_col align-items-center align-items-lg-start gap-3 gap-lg-5 lh-lg">
+            <div  data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000" class="content w-100 w-md-75 w-lg-50 flex_col align-items-center align-items-lg-start gap-3 gap-lg-5 lh-lg">
                 
                <div class="flex_col gap-1 align-items-start">
                    
@@ -228,13 +245,15 @@
 
                 </div>
 
-                <button class="rounded-3 flex_center bg-light py-3 px-3 text-dark font_normal border-button ">
+                <button class="button-hover rounded-3 flex_center bg-light py-3 px-3 text-dark font_normal border-button ">
                     Explore Services
                 </button>
 
             </div>
 
-            <div class="image w-100 flex_items_center justify-content-center  " style="background-color: #E0F8F8;">
+            <div data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000" class="image w-100 flex_items_center justify-content-center  " style="background-color: #E0F8F8;">
                 <img src="./assets/images/serviceImage.png" alt="serviceImage" class="w-100">
             </div>
 
@@ -244,7 +263,9 @@
 
             <div class="content w-100  flex_col align-items-center align-items-lg-start gap-3 ">
                 
-                <div class="flex_col gap-1 align-items-start w-100">
+                <div data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000" class="flex_col gap-1 align-items-start w-100">
                     
                     <div class="flex_center gap-4">
                        <p class="text-uppercase text_primary text_primary font_subTitle font_semibold px-3" style="background-color: #20cfc621;">testimonials</p>
@@ -254,13 +275,17 @@
  
                 </div>
  
-                 <p class="font_medium lh-base w-lg-50">Discover the Success Stories and Satisfaction of Clients Who Have Benefited from Our Expertise and Personalized Financial Guidance</p>
+                 <p data-aos="fade-up"
+                 data-aos-delay="300"
+                 data-aos-duration="1000"  class="font_medium lh-base w-lg-50">Discover the Success Stories and Satisfaction of Clients Who Have Benefited from Our Expertise and Personalized Financial Guidance</p>
    
              </div>
 
              <div class="testimoni-slider-container w-100 d-flex justify-content-center  justify-content-xl-between  flex-wrap gap-5 gap-xl-0">
                 
-                <div class="testimoni-container">
+                <div data-aos="zoom-in"
+                data-aos-delay="350"
+                data-aos-duration="1000" class="testimoni-container">
 
                     <div class="testimoni white-bg-testimoni position-relative p-4  d-flex flex-column gap-4">
 
@@ -284,9 +309,10 @@
                     </div>
 
                 </div>
-
-                
-                <div class="testimoni-container">
+  
+                <div data-aos="zoom-in"
+                data-aos-delay="450"
+                data-aos-duration="1000" class="testimoni-container">
 
                     <div class="testimoni primary-bg-testimoni position-relative p-4  d-flex flex-column gap-4">
 
@@ -311,7 +337,9 @@
 
                 </div>
                 
-                <div class="testimoni-container">
+                <div  data-aos="zoom-in"
+                data-aos-delay="550"
+                data-aos-duration="1000" class="testimoni-container">
 
                     <div class="testimoni white-bg-testimoni position-relative p-4  d-flex flex-column gap-4">
 
@@ -343,7 +371,9 @@
 
         <section class="provides flex_center flex-column gap-5 lh-lg px-lg-3 px-xl-5 px-xxl-0">
 
-            <div class="content w-100 flex_col align-items-center align-items-lg-start gap-3 ">
+            <div data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"  class="content w-100 flex_col align-items-center align-items-lg-start gap-3 ">
               
                 <h2 class="font_title font_bold">Our Team Provides Valuable Services at Any Time in Any Situation</h2>
 
@@ -351,7 +381,9 @@
 
              <div class="provides-container w-100 d-flex justify-content-center  justify-content-xl-between flex-wrap gap-5 gap-sm-0">
                 
-                <div class="provide-container position-relative p-4  d-flex flex-column align-items-start gap-4">
+                <div data-aos="zoom-in"
+                data-aos-delay="350"
+                data-aos-duration="1000"  class="provide-container position-relative p-4  d-flex flex-column align-items-start gap-4">
 
                     <div class="d-flex flex-column gap-3 w-100">
 
@@ -368,7 +400,9 @@
 
                 </div>
                 
-                <div class="provide-container position-relative p-4  d-flex flex-column align-items-start gap-4">
+                <div data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-duration="1000" class="provide-container position-relative p-4  d-flex flex-column align-items-start gap-4">
 
                     <div class="d-flex flex-column gap-3 w-100">
 
@@ -385,7 +419,9 @@
 
                 </div>
                 
-                <div class="provide-container position-relative p-4  d-flex flex-column align-items-start gap-4">
+                <div  data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="1000" class="provide-container position-relative p-4  d-flex flex-column align-items-start gap-4">
 
                     <div class="d-flex flex-column gap-3 w-100">
 
@@ -412,29 +448,41 @@
 
                 <div class="content d-flex justify-content-between flex-column px-4 px-lg-5">
 
-                    <div class="d-flex align-items-center gap-3">
+                    <div data-aos="fade-right"
+                    data-aos-delay="200"
+                    data-aos-duration="1000" class="d-flex align-items-center gap-3">
                         <p class="text-uppercase font_subTitle font_semibold px-3" style="color: #2CDFD5;">Start now</p>
                         <span class="line-title" style="background-color: #2CDFD5;"></span>
                      </div>
 
-                     <h2 class="font_title font_bold text-light">Get Start For Free No Credit Card Required </h2>
+                     <h2  data-aos="fade-right"
+                     data-aos-delay="300"
+                     data-aos-duration="1000" class="font_title font_bold text-light">Get Start For Free No Credit Card Required </h2>
 
-                    <form action="#" class="d-flex justify-content-between justify-content-lg-start gap-lg-3">
+                    <form  data-aos="fade-right"
+                    data-aos-delay="400"
+                    data-aos-duration="1000" action="#" class="d-flex justify-content-between justify-content-lg-start gap-lg-3">
                         <input type="text" class="bg-light rounded-3 px-4" placeholder="Email address" style="color: #7E7E7E;">
-                        <button type="button" class="rounded-3 flex_center py-3 px-3 text-light font_normal end-0" style="background-color: #20CFC6;">
+                        <button type="button" class="rounded-3 button-hover flex_center py-3 px-3 text-light font_normal end-0" style="background-color: #20CFC6;">
                             Get Started
                         </button>
                     </form>
 
-                    <p class="font_normal" style="color: #D3D3D3;">Want to contact our team and book a call? <span style="color: #20CFC6;">Try it now</span> </p>
+                    <p data-aos="fade-right"
+                    data-aos-delay="500"
+                    data-aos-duration="1000" class="font_normal" style="color: #D3D3D3;">Want to contact our team and book a call? <span style="color: #20CFC6; cursor: pointer; text-decoration: underline;">Try it now</span> </p>
                     
                 </div>
 
                 <div class="image position-relative flex_items_center justify-content-end px-4 px-lg-5">
 
-                    <img src="./assets/images/chartImage.png" alt="chartImage" class="w-50 position-absolute start-0 bottom-0">
+                    <img data-aos="zoom-in"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"  src="./assets/images/chartImage.png" alt="chartImage" class="w-50 position-absolute start-0 bottom-0" style="z-index: 9;">
 
-                    <img src="./assets/images/contactImage.png" alt="contactImage" class="w-75">
+                    <img data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-aos-duration="1000" src="./assets/images/contactImage.png" alt="contactImage" class="w-75 position-relative">
                 </div>
 
             </div>
@@ -445,8 +493,9 @@
           
             <div class="container font_normal">
 
-              <div class="row">
-                <!-- Left section: Branding & Description -->
+              <div class="row d-md-flex justify-content-md-between">
+
+                <!-- Left section  -->
                 <div class="col-lg-4 mb-4 d-flex flex-column gap-3 gap-xl-4">
                   <h5 class="fw-bold">Prosperix</h5>
                   <p class="lh-lg">
@@ -459,7 +508,7 @@
                   </div>
                 </div>
           
-                <!-- Middle section: Our Services -->
+                <!-- Middle section  -->
                 <div class="col-lg-2 mb-4 d-flex flex-column gap-3 gap-xl-4">
                   <h6 class="fw-semibold font_medium">Our Services</h6>
                   <ul class="list-unstyled d-flex flex-column gap-3 gap-xl-4">
@@ -469,8 +518,7 @@
                     <li><a href="#" class="text-white text-decoration-none">Debt Management</a></li>
                   </ul>
                 </div>
-          
-                <!-- Middle section: Explore More -->
+           
                 <div class="col-lg-2 mb-4 d-flex flex-column gap-3 gap-xl-4">
                   <h6 class="fw-semibold font_medium">Explore More</h6>
                   <ul class="list-unstyled d-flex flex-column gap-3 gap-xl-4">
@@ -481,8 +529,8 @@
                   </ul>
                 </div>
           
-                <!-- Right section: Contact -->
-                <div class="col-lg-4 mb-4 d-flex flex-column gap-3 gap-xl-4">
+                <!-- Right section  -->
+                <div class="col-lg-2 mb-4 d-flex flex-column gap-3 gap-xl-4">
                   <h6 class="fw-semibold font_medium">Contact Details</h6>
                   <p><a href="mailto:contact@briofin.com" class="text-white text-decoration-none">contact@briofin.com</a></p>
                   <p><a href="tel:+15551234567" class="text-white text-decoration-none">+1 (555) 123-4567</a></p>
@@ -513,6 +561,12 @@
 
     <!-- bootstrap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        AOS.init({
+            once: true 
+        });
+      </script>
 
     <!-- jquery link -->
      <script src="./assets/js/index.js"></script>

@@ -164,6 +164,22 @@ section{
     -o-border-radius: 50px;
 }
 
+.button-hover{
+    transition: .1s ease-in;
+    -webkit-transition: .1s ease-in;
+    -moz-transition: .1s ease-in;
+    -ms-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+}
+
+.button-hover:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
 
 /* styling */
 /* nav */
@@ -306,8 +322,30 @@ nav{
     overflow: hidden;   
 }
 
+.wrapper::before,
+.wrapper::after{
+    content: "";
+
+    width: 20%;
+    position: absolute;
+    
+    height: 100%;
+    top: 0;
+    z-index: 99; 
+}
+
+.wrapper::before{
+    background: linear-gradient(to left, transparent, white);
+    left: 0;
+}
+
+.wrapper::after{
+    background: linear-gradient(to right, transparent, white);
+    right: 0;
+}
+
 .item-brand{
-    width: 300px;
+    width: 190px;
     height: 100%;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -315,7 +353,7 @@ nav{
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     position: absolute;
-    left: calc(300px * 12);
+    left: calc(190px * 12);
     animation: scrollLeft 30s linear infinite;
     -webkit-animation: scrollLeft 30s linear infinite;
     transition: .2s;
@@ -324,7 +362,6 @@ nav{
     -ms-transition: .2s;
     -o-transition: .2s;
     cursor: pointer;
- 
 }
 
 .item-brand img{
@@ -335,21 +372,18 @@ nav{
     -ms-transition: .2s ease-in;
     -o-transition: .2s ease-in;
  
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
 .item-brand:hover img{
     filter: grayscale(0%);
 }
-
-.wrapper:hover .item-brand{
-    animation-play-state: paused;
-}
+ 
 
 @keyframes scrollLeft {
     to{
-        left: -200px;
+        left: -190px;
     }
 }
 
@@ -528,6 +562,27 @@ footer{
         -moz-transform: translateY(0%);
         -ms-transform: translateY(0%);
         -o-transform: translateY(0%);
+    }
+
+    /* brands slider */
+    .wrapper::before,
+    .wrapper::after{ 
+        width: 13%; 
+    }
+
+    .item-brand{
+        width: 300px; 
+        left: calc(300px * 12);
+    }
+    
+    @keyframes scrollLeft {
+        to{
+            left: -300px;
+        }
+    }
+
+    .item-brand img{ 
+        height: 50px; 
     }
 
     /* testimonials */
